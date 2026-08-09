@@ -17,7 +17,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
+      - name: Install .NET Framework 4.5.2 Developer Pack
+        run: choco install netfx-4.5.2-devpack -y
       - name: Setup MSBuild path
         uses: microsoft/setup-msbuild@v3
 
